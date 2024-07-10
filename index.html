@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gioco Labirinto</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    #maze {
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(5, 100px);
+        gap: 2px;
+    }
+    .cell {
+        background-color: #ddd;
+        border: 1px solid #aaa;
+    }
+    .finish {
+        background-color: green;
+    }
+    .player {
+        background-color: red;
+    }
+    .button-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div id="maze"></div>
+<div class="button-container">
+    <button class="button" id="leftButton">&larr; Sinistra</button>
+    <button class="button" id="rightButton">Destra &rarr;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
